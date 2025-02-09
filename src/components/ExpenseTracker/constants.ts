@@ -20,4 +20,4 @@ export const EXCHANGE_RATES: ExchangeRates = {
 };
 
 export const API_URL = 'https://openexchangerates.org/api/latest.json';
-export const API_KEY = process.env.REACT_APP_API_KEY; // Use environment variable for API key
+export const API_KEY = "240de5a931c9430b9d26ade6c1df8d48"; // Use environment variable for API key
