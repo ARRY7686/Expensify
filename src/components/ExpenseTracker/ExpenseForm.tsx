@@ -10,7 +10,7 @@ interface ExpenseFormProps {
   expenses: Expense[];
 }
 
-export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onSave, editingId, expenses }) => {
+export const ExpenseForm: React.FC<ExpenseFormProps> = ({ editingId, expenses }) => {
   const [formData, setFormData] = useState({
     description: '',
     amount: '',
@@ -94,7 +94,7 @@ export const ExpenseForm: React.FC<ExpenseFormProps> = ({ onSave, editingId, exp
               onChange={(e) => setFormData({...formData, category: e.target.value})}
               className="w-full p-3 border border-gray-200 rounded-lg"
             >
-              {Object.entries(CATEGORIES).map(([category, color]) => (
+              {Object.entries(CATEGORIES).map(([category]) => (
                 <option key={category} value={category}>
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </option>

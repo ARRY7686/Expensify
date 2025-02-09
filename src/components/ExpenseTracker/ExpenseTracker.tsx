@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
-import { Plus, Trash2, Edit2, Save, DollarSign } from 'lucide-react';
+import React, { useState } from 'react';
 import { useExpenseStore } from './store';
-import { CATEGORIES, CURRENCIES, EXCHANGE_RATES } from './constants';
 import { ExpenseForm } from './ExpenseForm';
 import { ExpenseList } from './ExpenseList';
 import { ExpenseChart } from './ExpenseChart';
